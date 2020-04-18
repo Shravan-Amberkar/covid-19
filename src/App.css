@@ -1,38 +1,109 @@
-.App {
+.floating {
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px;
+    animation-delay: 0.15s;
+
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }
+}
+
+
+.countryPicker-wrap{
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.card-wrap{
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+
+.card{
+  margin-bottom: 1rem;
+}
+.card-body{
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.card-infected-footer{
+height: 0.5rem;
+background: #0779e4;
+}
+.card-recovered-footer{
+  height: 0.5rem;
+  background: #4cff4c;
+}
+.card-deaths-footer{
+  height: 0.5rem;
+  background: #dd2c00;
+}
+
+.card-t-1{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.card-t-2{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.card-t-3{
+  font-size: 1rem;
+  font-weight: 500;
+  color: #7d8f98;
+}
+.card-t-4{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card-infected-span{
+color: #0779e4;
+}
+.card-recovered-span{
+color: #4cff4c;
+}
+.card-deaths-span{
+color: #dd2c00;
+}
+
+.chart-wrap{
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.img-wrap{
   text-align: center;
+  padding-top: 2rem;
+}
+@media (max-width: 770px) {
+
+.img-wrap img{
+  width: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chart-wrap{
+  width: 100%;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.countryPicker-wrap{
+  width: 90%;
+
+}
+.card-wrap{
+  width: 100%;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
